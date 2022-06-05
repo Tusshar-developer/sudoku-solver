@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "SF-Pro-Display";
+  src: url("./fonts/SF-Pro-Display-Medium.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "SF-Pro-Display", -apple-system, system-ui, Roboto, sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.board tr td {
+  height: 50px;
+  width: 50px;
+  border: 2px solid #a1a1a1;
+  margin: 0;
+  text-align: center;
+}
+
+.board tr td:nth-child(1) {
+  border-left: 3px solid black !important;
+}
+
+.board tr td:nth-child(9) {
+  border-right: 3px solid black !important;
+}
+
+.border-right {
+  border-right: 3px solid black !important;
+}
+
+.border-bottom {
+  border-bottom: 3px solid black !important;
+}
+
+.border-top {
+  border-top: 3px solid black !important;
+}
+
+.textInput {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 1em;
+  outline: none;
+  font-family: "SF-Pro-Display", -apple-system, system-ui, Roboto, sans-serif;
+}
+
+.button {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "SF-Pro-Display", -apple-system, system-ui, Roboto, sans-serif;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-inline: 10px;
+}
+
+.button:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

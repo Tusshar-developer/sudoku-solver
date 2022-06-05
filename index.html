@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table class="board">
+      <tr class="border-top">
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+      <tr class="border-bottom">
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td class="border-right">
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+        <td>
+          <input type="text" maxlength="1" placeholder="0" class="textInput" />
+        </td>
+      </tr>
+    </table>
+
+    <div class="buttons">
+      <button onclick="checkAndSolve()" class="solve button">Solve</button>
+      <button onclick="clearInputs()" class="clear button">Clear</button>
+    </div>
+
+    <script src="sudoku.js"></script>
+  </body>
+</html>
